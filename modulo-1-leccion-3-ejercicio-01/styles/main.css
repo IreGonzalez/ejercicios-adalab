@@ -1,0 +1,24 @@
+img {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+div {
+  display: block;
+  background-color: cornflowerblue;
+  height: 100px;
+  width: 100px;
+  padding: 10px green;
+}
+#entreparrafos {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
+.cajaimagen {
+  display: inline-block;
+  width: 100px;
+  height: 100;
+  padding: 10px;
+  border: 5px coral;
+}

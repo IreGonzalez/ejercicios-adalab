@@ -1,0 +1,21 @@
+.box {
+  background-color: beige;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  margin: 10px;
+  border: solid 5px red;
+}
+.box:hover {
+  background-color: aquamarine;
+}
+.linea {
+  background-color: brown;
+  width: 250px;
+}
+.main {
+  border: solid 3px black;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
