@@ -11,10 +11,24 @@
 }
 .header {
   background-color: var(--fondo);
+  width: 1000px;
   padding: 20px;
   border: var(--borde);
 }
+
+/*flex*/
 .navigation {
   background-color: var(--fondo);
+  padding: 10px;
+  width: 1000px;
   border: var(--borde);
+  display: flex;
+}
+.patron {
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  border: var(--borde);
+}
+.menu {
 }
