@@ -2,9 +2,12 @@
   display: flex;
   border: solid 4px black;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .box {
-  width: 50%;
+  border: 1px solid grey;
+  width: 49%;
 }
 .image {
   margin: 5px;
