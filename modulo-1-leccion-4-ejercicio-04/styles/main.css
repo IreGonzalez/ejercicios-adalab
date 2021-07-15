@@ -1,7 +1,5 @@
 .container {
   display: flex;
-  width: 500px;
-  height: 1000px;
   border: solid 4px black;
   flex-wrap: wrap;
 }
@@ -9,7 +7,11 @@
   width: 50%;
 }
 .image {
+  margin: 5px;
   display: inline-block;
   width: 20%;
-  height: 20%;
+}
+.box5 {
+  order: -1;
+  width: 100%;
 }
