@@ -1,5 +1,21 @@
-.container {
+.contenedor {
   display: flex;
-  width: 500px;
-  height: 500px;
+  flex-direction: column;
+
+  height: 100vh;
+}
+header {
+  order: 0;
+  background-color: khaki;
+  height: 10vh;
+}
+main {
+  order: 1;
+  background-color: lavender;
+  height: 80vh;
+}
+footer {
+  order: 2;
+  background-color: lightpink;
+  height: 10vh;
 }
