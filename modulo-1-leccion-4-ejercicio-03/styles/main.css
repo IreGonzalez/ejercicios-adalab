@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  border: solid 3px black;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.box {
+  border: solid 3px red;
+}
+.box1 {
+  margin-left: 20px;
+}
+.box5 {
+  margin-right: 20px;
+}
