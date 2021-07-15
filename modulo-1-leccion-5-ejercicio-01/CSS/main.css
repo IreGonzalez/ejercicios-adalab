@@ -1,0 +1,13 @@
+.estilo {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.box {
+  display: inline;
+  margin: 6px;
+}
