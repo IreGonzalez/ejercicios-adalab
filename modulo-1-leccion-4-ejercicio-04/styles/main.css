@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  width: 500px;
+  height: 1000px;
+  border: solid 4px black;
+  flex-wrap: wrap;
+}
+.box {
+  width: 50%;
+}
+.image {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+}
