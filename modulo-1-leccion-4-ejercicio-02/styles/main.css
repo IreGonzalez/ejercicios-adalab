@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  border: solid 3px black;
+  flex-wrap: wrap;
+}
+.box {
+  border: solid 3px red;
+  width: 200px;
+  height: 100px;
+}
