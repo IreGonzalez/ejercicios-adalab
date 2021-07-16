@@ -1,0 +1,11 @@
+.header {
+  background-color: lightskyblue;
+  display: block;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+}
+.text {
+  position: absolute;
+  top: 70px;
+}
