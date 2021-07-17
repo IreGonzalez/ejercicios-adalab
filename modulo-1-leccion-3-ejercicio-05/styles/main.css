@@ -1,0 +1,12 @@
+.content {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 5px solid blue;
+  margin-left: 50%;
+  box-sizing: content-box;
+}
+.foto {
+  width: 100px;
+  height: 100px;
+}
