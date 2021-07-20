@@ -9,7 +9,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  text-align: center;
+}
 .main {
+  border: black 5px solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +26,6 @@
   font-size: 3.125rem;
   font-weight: 900;
   color: var(--fireman);
-  text-align: center;
 }
 .footer {
   border-top: solid var(--fireman) 5px;
@@ -48,6 +51,7 @@
   font-weight: 700;
   color: white;
   text-align: center;
+  transform: translateY(-50%);
 }
 .copy {
   font-family: var(--firemanfont);
@@ -59,4 +63,33 @@
 }
 /*tablet/desktop*/
 @media all and (min-width: 768px) {
+  .footer {
+    flex-direction: initial;
+    align-items: initial;
+    align-content: space-between;
+    flex-flow: row-reverse;
+  }
+  .symbol {
+    transform: unset;
+    transform: translateY(50%);
+  }
+  .copy {
+    border: solid 1px black;
+    display: inline-block;
+    box-sizing: content-box;
+
+    align-content: initial;
+    text-align: center;
+  }
 }
+/*
+ .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+  }
+
+  .icon {
+    transform: none;
+    order: 1;
+  }*/
