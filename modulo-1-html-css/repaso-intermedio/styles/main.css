@@ -2,13 +2,20 @@
 :root {
   --fireman: #cc212a;
   --firemanfont: "Montserrat", sans-serif;
+  --fontsize-slogan: 3.125;
 }
-.hastag {
-  font-family: var(--firemanfont);
-  font-size: 3.125rem;
-  font-weight: 900;
-  color: var(--fireman);
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 .slogan {
   font-family: var(--firemanfont);
@@ -17,16 +24,28 @@
   color: var(--fireman);
   text-align: center;
 }
-.rectangle {
-  background-color: var(--fireman);
-  height: 0.3125rem;
+.footer {
+  border-top: solid var(--fireman) 5px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
 }
 .symbol {
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fireman);
   height: 4rem;
   width: 4rem;
+  border-radius: 50%;
   background-color: var(--fireman);
+  font-family: var(--firemanfont);
   font-size: 1.5rem;
+  font-weight: 700;
   color: white;
   text-align: center;
 }
@@ -35,6 +54,8 @@
   font-size: 1rem;
   font-weight: 300;
   color: black;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 /*tablet/desktop*/
 @media all and (min-width: 768px) {
