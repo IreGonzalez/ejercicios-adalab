@@ -1,56 +1,124 @@
-# Ejercicio global de HTML y CSS
+![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
-El objetivo de este ejercicio es aprender a estructurar y maquetar una página web desde cero. Por ello nos vamos a preocupar de que la distribucción de elementos de la página esté perfecta.
+# Adalab web starter kit
 
-## Qué vamos a maquetar
+Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
 
-<table>
-  <tr>
-    <td>
-      <img src="./info/mobile.jpg" alt="Mobile version" height="200"/>
-    </td>
-    <td>
-      <img src="./info/tablet.jpg" alt="Tablet version" height="200"/>
-    </td>
-    <td>
-      <img src="./info/desktop.jpg" alt="Desktop version" height="200"/>
-    </td>
-  </tr>
-</table>
+Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
 
-Vamos a maquetar la página de [Spotify](https://www.spotify.com/es/premium/), pero vamos a añadir algunas moficicaciones para hacer nuestro ejercicio más interesante.
+En el Kit hay 3 tipos de ficheros y carpetas:
 
-Modificaciones y requerimientos:
+- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
+- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
+- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
 
-- Tenemos que prerapar la página para los siguientes tamaños de pantalla:
-  - Mobile: menos 768px
-  - Tablet: de 769px a 1200px
-  - Desktop: a partir de 1201px
-- La cabecera es fija y se mostrará por encima del resto de contenidos cuando se haga scroll.
-- El fondo de la cabecera siempre va a ser negro.
-- El **hero** (parte azul) debe medir de alto el 50% del tamaño de la ventana.
-- En el footer, para pantallas de menos 500px, los elementos deben aparecer en columna, primero el texto **España**, a continuación el **copyright** y por abajo los **links**.
+## Guía de inicio rápido
 
-## Pasos para crear el código HTML
+> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
 
-1. Añadimos todo el contenido de la página en el html.
-1. Ponemos todas las etiquetas cada contenido con el objetivo de poner la semántica lo mejor posible.
+### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
 
-## Pasos para crear el código CSS
+1. **Crea tu propio repositorio.**
+1. Descarga este **Starter kit desde GitHub**.
+   - No recomendamos que clones este repo ya que no podrás añadir commits.
+1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
+   - Recuerda que debes copiar **también los ficheros ocultos**.
+   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
+1. **Abre una terminal** en la carpeta raíz de tu repositorio.
+1. **Instala las dependencias** locales ejecutando en la terminal el comando:
 
-Debemos empezar a maquetar desde los elementos más exteriores hacia los más interiores. Esto es porque los estilos CSS de los elementos externos pueden ser heredados por los elementos más internos, y por lo tanto modificarlos.
+```bash
+npm install
+```
 
-1. Tenemos que identificar qué grupos de elementos se comportan como un único elemento. Sabremos identificarlos si están visualmente juntos y si se comportan de la misma manera en diseño móvil, tablet y desktop. Por ejemplo si varios elementos se centran todos a la vez al pasar de móvil a desktop nos dan una pista de que puede ser un grupo de elementos. Para esto nos viene muy bien coger rotu y papel y pintar la página.
-1. Una vez identificados estos grupos de elementos que se comportan como uno solo tenemos que agruparlos en el código. Para ello los envolvemos con un `<div />` que va actuar como contenedor. Si en vez de un `<div />` podemos utilizar una etiqueta con carga semántica mucho mejor. Si ya estaban agrupados en un contenedor, no hace falta que los volvamos a agrupar.
-1. A continuación le tenemos que añadir una clase css a cada uno de estos contenedores. Y vamos a dar los siguientes estilos a cada clase: `.my-container { border: solid 3px red; background: blue; }` (debemos sustituir `my-container` por el nombre de la clase que le hayamos dado). Con esto conseguiremos identificar visualmente los contenedores. También podemos darle a cada clase un color de borde y fondo diferente para que sea más fácil de visualizar.
-1. Por último tenemos que aplicar estilos a los contenedores para distribuirlos por la página. Mientras lo hacemos tenemos que ir probando la página en los diferentes anchos de pantalla para ver que nuestra maquetación se ajusta a todos ellos. Para ello utilizaremos todas las propiedades que hemos aprendido en el curso, como:
-   - display: inline, inline-block, block, flex, grid...
-   - position: absolute, fixed...
+### Pasos para arrancar el proyecto:
 
-Una vez hayamos maquetado la distribución de los contenedores principales en todos los anchos de pantalla, deberiamos repetir estos pasos con los contenedores que haya en elementos más internos.
+Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
 
-Una vez hayamos terminado de maquetar todos los contenedores, podremos borrar los estilos de borde y fondo que habíamos puesto para visualizar fácilmente los contenedores. Y podremos empezar a maquetar fino fino y al detalle cada elemento de la página, centrándonos en detalles como colores, tamaños de fuente, márgenes...
+```bash
+npm start
+```
 
-## Do it yourself
+Este comando:
 
-Os recomendamos a las alumnas que buquéis una página que os guste y la maquetéis siguiendo estos pasos. Si necesitáis ayuda pedírsela a las compañeras o a los profes.
+- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
+- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
+- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
+   - Convierte los ficheros SASS en CSS.
+   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+
+Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+
+### Pasos para publicar el proyecto en GitHub Pages:
+
+Para generar tu página para producción ejecuta el comando:
+
+```bash
+npm run docs
+```
+
+Y a continuación:
+
+1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
+1. Entra en la pestaña `settings` de tu repo.
+1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
+1. Y ya estaría!!!
+
+Además, los comandos:
+
+```bash
+npm run push-docs
+```
+o
+
+```bash
+npm run deploy
+```
+
+son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
+
+## Flujo de archivos con Gulp
+
+Estas tareas de Gulp producen el siguiente flujo de archivos:
+
+![Gulp flow](./gulp-flow.png)
+
+## `gulpfile.js` y `config.json`
+
+Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
+
+De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
+
+## Estructura de carpetas
+
+La estructura de carpetas tiene esta pinta:
+
+```
+src
+ ├─ api // los ficheros de esta carpeta se copian en public/api/
+ |  └─ data.json
+ ├─ images
+ |  └─ logo.jpg
+ ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
+ |  ├─ main.js
+ |  └─ events.js
+ ├─ scss
+ |  ├─ components
+ |  ├─ core
+ |  ├─ layout
+ |  └─ pages
+ └─ html
+    └─ partials
+```
+
+> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
+
+## Vídeotutoriales del Starter kit
+
+- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
+- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
+- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
+
+## Falta algo?
+
+Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
