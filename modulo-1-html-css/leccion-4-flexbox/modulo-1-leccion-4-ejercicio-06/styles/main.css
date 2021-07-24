@@ -1,5 +1,36 @@
-.container {
+body {
   display: flex;
-  width: 500px;
-  height: 500px;
+  flex-direction: column;
+  height: 320vh;
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: khaki;
+  height: 10vh;
+}
+main {
+  display: flex;
+  background-color: lavender;
+  height: 300vh;
+}
+.aside {
+  background-color: lightgreen;
+  width: 30vw;
+}
+.article {
+  display: flex;
+  align-items: center;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightpink;
+  height: 10vh;
+  min-height: 10vh;
 }
