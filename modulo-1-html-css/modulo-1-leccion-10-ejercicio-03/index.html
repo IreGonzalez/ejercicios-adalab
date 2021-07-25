@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Create an account</h1>
+    <h2>It´s free and always will be.</h2>
+    <form action="/signup" method="POST">
+      <div>
+        <label for="name">
+          <input type="text" name="firstname" placeholder="First name" />
+        </label>
+        <label for="surname">
+          <input type="text" name="surname" placeholder="Surname" />
+        </label>
+      </div>
+      <div>
+        <label for="email">
+          <input
+            type="email"
+            type="tel"
+            name="email-mobile-number"
+            placeholder="Email or mobile number"
+          />
+        </label>
+
+        <label for="re-enter">
+          <input
+            type="email"
+            type="tel"
+            name="re-enter"
+            placeholder="Re-enter email or mobile number"
+          />
+        </label>
+      </div>
+
+      <label for="password">
+        <input type="password" name="password" placeholder="New password" />
+      </label>
+
+      <div>
+        <h2>Birthday</h2>
+        <select name="day">
+          <option value="day">Day</option>
+        </select>
+        <select name="month">
+          <option value="month">Month</option>
+        </select>
+        <select name="year">
+          <option value="year">Year</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="female">
+          <h3>Female <input type="radio" name="female" /></h3>
+          <h3>Male <input type="radio" name="male" /></h3>
+        </label>
+      </div>
+
+      <label for="create">
+        <input type="button" value="create acount" />
+      </label>
+
+      <label for="reset">
+        <input type="reset" value="Restaurar valores por defecto" />
+      </label>
+    </form>
+  </body>
+</html>
