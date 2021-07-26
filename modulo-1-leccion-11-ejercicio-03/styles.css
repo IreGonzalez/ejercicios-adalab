@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20vh 80vh 20vh;
+}
+.header {
+  background-color: burlywood;
+  grid-column: span 12;
+}
+.menu {
+  background-color: purple;
+  grid-column: span 4;
+  grid-row: span 1;
+}
+.content {
+  background-color: salmon;
+  grid-column: span 8;
+  grid-row: span 1;
+}
+.footer {
+  background-color: lightskyblue;
+  grid-column: span 12;
+}
