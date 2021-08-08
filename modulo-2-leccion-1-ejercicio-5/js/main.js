@@ -1,3 +1,5 @@
 'use strict';
-let paragraph = document.querySelector ('p');
-paragraph.innerHTML = 'Hola Mundo';
+
+const password = document.querySelector('.js__password');
+password.innerHTML = '**********';
+
