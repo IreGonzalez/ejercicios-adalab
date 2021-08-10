@@ -1,9 +1,10 @@
 'use strict';
-//querySelector
-const numberAElement = document.querySelector ('.js-number-a');
-const numberBElement = document.querySelector ('.js-number-b');
-const resultElement = document.querySelector ('.js-result');
 
-//value
+let numberOne = document.querySelector ('.js-number-a');
+let numberTwo = document.querySelector ('.js-number-b');
+let result = document.querySelector ('.js-result');
+
+result.innerHTML = numberOne.value + numberTwo.value ;
+
 
 
