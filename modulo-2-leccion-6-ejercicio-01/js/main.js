@@ -3,10 +3,6 @@
 const placeToAdalaber1 = document.querySelector('.js-adalaber1');
 const placeToAdalaber2 = document.querySelector('.js-adalaber2');
 
-let adalaberName = '';
-let adalaberAge = '';
-let adalaberJob = '';
-
 const adalaber1 = {
     name: 'Susana',
     age: 34,
@@ -19,16 +15,12 @@ const adalaber2 = {
     job: 'Actriz'
 }
 
-function infoAdalaber1() {
-    adalaberName = adalaber1.name;
-    adalaberAge = adalaber1.age;
-    adalaberJob = adalaber1.job;
-    return `Mi nombre es ${adalaberName}, tengo ${adalaberAge} y soy ${adalaberJob}`
+function infoAdalaber1(a, b, c) {
+    placeToAdalaber1.innerHTML = `Mi nombre es ${a}, tengo ${b} y soy ${c}.`
+}
+function infoAdalaber2(a, b, c) {
+    placeToAdalaber2.innerHTML = `Mi nombre es ${a}, tengo ${b} y soy ${c}.`
 }
 
-function infoAdalaber2() {
-    adalaberName = adalaber2.name;
-    adalaberAge = adalaber2.age;
-    adalaberJob = adalaber2.job;
-    return `Mi nombre es ${adalaberName}, tengo ${adalaberAge} y soy ${adalaberJob}`
-}
+infoAdalaber1(adalaber1.name, adalaber1.age, adalaber1.job);
+infoAdalaber2(adalaber2.name, adalaber2.age, adalaber2.job);
