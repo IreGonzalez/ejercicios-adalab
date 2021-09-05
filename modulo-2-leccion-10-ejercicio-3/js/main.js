@@ -8,7 +8,7 @@ function getUserInformation() {
         .then(response => response.json())
         .then(function (data) {
             const name = document.querySelector('.js-name');
-            name.innerHTML = data.name
+            name.innerHTML = data.login
 
             const avatar = document.querySelector('.js-photo');
             avatar.src = data.avatar_url
