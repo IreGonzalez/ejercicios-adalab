@@ -8,14 +8,17 @@ const users = [
     { name: 'Inmaculada', isPremium: false }
 ];
 //poner el saludo por defecto
-//Comprobar si es premium
-const usersSaludation = users.isPremium.map(users.name => `'Bienvenida' ${users.name}`)
 
+const user = users.name;
+const usersSaludation = users.map(user => `'Bienvenida' ${user}`)
 
 console.log(usersSaludation);
-function saludation() {
 
-    if (for (isPremium of users) === true) {
-
+//Comprobar si es premium
+for (const user of users) {
+    const usersPremium = users.isPremium;
+    if (usersPremium === true) {
+        const usersPremiumSaludation = 
     }
+    else { }
 }
