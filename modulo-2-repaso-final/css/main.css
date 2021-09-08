@@ -1,0 +1,13 @@
+.header__title{
+
+}
+.palette__title{
+
+}
+.palette__colors{
+    display: flex;
+}
+.color__item{
+    width: 20px;
+    height: 20px;
+}
