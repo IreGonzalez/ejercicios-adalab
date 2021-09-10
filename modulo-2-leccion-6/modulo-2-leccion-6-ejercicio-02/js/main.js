@@ -3,16 +3,12 @@
 const adalaber1 = {
     name: 'Susana',
     age: 34,
-    job: 'Periodista'
+    job: 'Periodista',
+    speak: km => `una maraton de ${km} kilómetros`
 }
 
 function run() {
-    return console.log('estoy corriendo');
+    return console.log('Estoy corriendo ' + adalaber1.speak(50));
 }
 
-
-function runAMaraton(distance) {
-    return console.log(`un maraton de ${distance} kilómetros`);
-}
 run();
-runAMaraton(50);
