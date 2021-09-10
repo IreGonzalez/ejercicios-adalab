@@ -1,0 +1,8 @@
+.button{
+    background-color: cadetblue;
+    color: darkblue;
+}
+.clicked{
+    background-color: darkblue;
+    color: cadetblue;
+}
