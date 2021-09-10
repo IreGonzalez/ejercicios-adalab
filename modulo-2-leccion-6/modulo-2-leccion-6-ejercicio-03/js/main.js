@@ -8,7 +8,7 @@ adalaber1.name = 'Susana',
     adalaber1.age = 34,
     adalaber1.job = 'Periodista';
 adalaber1.showBioAdalaber1 = function () {
-    return 'Mi nombre es' + this.name + ', tengo' + this.age + 'y soy' + this.job;
+    return 'Mi nombre es ' + this.name + ', tengo' + this.age + 'y soy' + this.job;
 };
 
 const adalaber2 = {}
@@ -17,7 +17,7 @@ adalaber2.name = 'Rocío',
     adalaber2.job = 'Actriz';
 
 adalaber2.showBioAdalaber2 = function () {
-    return 'Mi nombre es' + this.name + ', tengo' + this.age + 'y soy' + this.job;
+    return 'Mi nombre es ' + this.name + ', tengo ' + this.age + ' y soy ' + this.job;
 };
 
 placeToAdalaber1.innerHTML = adalaber1.showBioAdalaber1();
