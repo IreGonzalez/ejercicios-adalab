@@ -1,17 +1,19 @@
 
 import '../styles/App.css';
+import logo from '../images/adalab-logo-155x61.png';
 
 function App() {
   return (
     <div className="App">
       <header className="header">
         <a href="https://adalab.es/" title="Adalab" target="-blank">
-          <img
+          {/* <img
             className="logo"
             src="../images/adalab-logo-155x61.png"
             alt="Adalab"
             title="Adalab"
-          />
+          /> */}
+          <img src={logo} title="Adalab" alt="Logo de Adalab" />
         </a>
         <nav>
           <ul className="navigation">
