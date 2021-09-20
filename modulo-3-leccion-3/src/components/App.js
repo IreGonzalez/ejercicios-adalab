@@ -1,65 +1,56 @@
 
 import '../styles/App.css';
 
-// //EJERCICIO 3.2.1**********************************************************
+//EJERCICIO 3.3.1**********************************************************
 
-// function App() {
-//   const handleInput = (ev) => {
-//     console.log(ev.key);
-//   };
-//   return (
-//     <div className="App">
-//       <form>
-//         <input type="text" onKeyUp={handleInput} />
-//       </form>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-// //EJERCICIO 1 3.2.4**********************************************************
-
-// import { useState } from 'react';
-
-// function App() {
-//   let number = 0;
-//   const [sum, setSum] = useState(0);
-//   const handleSum = () => {
-//     number = sum + 1;
-//     return setSum(number);
-//   }
-//   const handleSubtract = () => {
-//     number = sum - 1;
-//     return setSum(number)
-//   }
-//   const handleReset = () => {
-//     number = 0;
-//     return setSum(number);
-//   }
-//   return (
-//     <div className="App">
-//       <div>
-//         <p>Contador : {sum}</p>
-//         <button onClick={handleSum} >Aumentar</button>
-//         <button onClick={handleSubtract}>Disminuir</button>
-//         <button onClick={handleReset}>Reset</button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-//EJERCICIO 2 3.2.4**********************************************************
+import { useState } from 'react';
 
 function App() {
+
+  // const [ingredient, setIngredient] = useState('');
+  // const handleList = (ev) => {
+  //   if () {
+  //     text = 'Eres una persona concebollista';
+  //   }
+  //   else {
+  //     text = 'Eres un robot sin paladar';
+  //   }
+
+  // }
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+  }
   return (
     <div className="App">
-      <form>
-      </form>
-    </div>
+      <header>
+        <h1>Selecciona los ingredientes de la tortilla de patatas</h1>
+      </header>
+      <main>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="macarrones">Macarrones
+            <input type="checkbox" name="macarrones" id="macarrones" value="Macarrones" />
+          </label>
+          <label htmlFor="nueces"> Nueces
+            <input type="checkbox" name="nueces" id="nueces" value="Nueces" /
+            ></label>
+          <label htmlFor="patatas">Patatas
+            <input type="checkbox" name="patatas" id="patatas" value="Patatas" />
+          </label>
+          <label htmlFor="huevos">Huevos
+            <input type="checkbox" name="huevos" id="huevos" value="Huevos" />
+          </label>
+          <label htmlFor="cebolla">Cebolla
+            <input type="checkbox" name="cebolla" id="cebolla" value="Cebolla" />
+          </label>
+          <label htmlFor="cerveza">Cerveza
+            <input type="checkbox" name="cerveza" id="cerveza" value="Cerveza" />
+          </label>
+          <input type="submit" value="Validar" />
+        </form>
+        {/* <p>{text}</p> */}
+      </main>
+    </div >
   );
 }
 
