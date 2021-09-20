@@ -52,40 +52,13 @@ import '../styles/App.css';
 
 // export default App;
 
-// //EJERCICIO 2 3.2.4**********************************************************
-
-// import { useState } from 'react';
-
-// function App() {
-//   const [mode, setMode] = useState('lightMode');
-//   const handleMode = () => {
-//     if (mode === 'lightMode') {
-//       setMode('darkMode')
-//     }
-//     else {
-//       setMode('lightMode')
-//     }
-//   }
-//   return (
-//     <div className="App">
-//       <div className={mode}>
-//         <button onClick={handleMode}>Des / activar el dark mode</button>
-//         <p className="hidden">Tienes activado el dark mode</p>
-//         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere aliquid quaerat, odio, blanditiis nihil temporibus, dolorem similique dicta quasi amet assumenda doloribus quos. Itaque architecto ad repellat at non.</p>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-//EJERCICIO 3 3.2.4**********************************************************
-import { useState } from 'react';
+//EJERCICIO 2 3.2.4**********************************************************
 
 function App() {
   return (
     <div className="App">
-
+      <form>
+      </form>
     </div>
   );
 }

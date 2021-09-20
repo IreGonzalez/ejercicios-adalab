@@ -2,3 +2,17 @@
 .App{
     font-size: 30px;
 }
+
+.hidden{
+    color: white;
+}
+
+.lightMode{
+    background-color: white;
+    color: black;
+}
+
+.darkMode{
+    background-color: rgb(37, 37, 37);
+    color: blanchedalmond;
+}
