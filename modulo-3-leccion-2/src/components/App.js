@@ -83,9 +83,15 @@ import '../styles/App.css';
 import { useState } from 'react';
 
 function App() {
+  const [menu, setMenu] = useState();
+
+
   return (
     <div className="App">
-
+      <i className="fas fa-bars"></i>
+      <div className="container__menu hidden__menu">
+        <i className="far fa-times-circle"></i>
+      </div>
     </div>
   );
 }

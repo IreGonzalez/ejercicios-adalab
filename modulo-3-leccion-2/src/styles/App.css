@@ -16,3 +16,14 @@
     background-color: rgb(37, 37, 37);
     color: blanchedalmond;
 }
+
+.hidden__menu{
+    display: none;
+}
+
+.container__menu{
+    width: 150px;
+    height: 200px;
+    border: solid 1px black;
+    background-color: lightblue;
+}
