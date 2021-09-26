@@ -1,4 +1,6 @@
 
+import '../styles/Link.css';
+
 const Link = (props) => {
     return (
         <li className="link">

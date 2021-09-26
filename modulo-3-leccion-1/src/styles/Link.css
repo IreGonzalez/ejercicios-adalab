@@ -1,0 +1,8 @@
+
+  .link {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--menucolor);
+    text-transform: uppercase;
+    padding: 5px;
+  }

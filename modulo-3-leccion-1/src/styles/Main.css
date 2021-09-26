@@ -1,0 +1,24 @@
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3cdbc0;
+    height: 100vh;
+  }
+  .slogan {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--textcolor);
+    text-transform: capitalize;
+    text-align: center;
+    width: 10ch;
+  }
+  
+  /*tablet-desktop*/
+  @media all and (min-width: 768px) {
+  .main {
+    font-size: 40px;
+    text-align: center;
+  }
+}

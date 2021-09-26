@@ -1,5 +1,6 @@
 
-import '../styles/App.css';
+import '../styles/Reset.css';
+import '../styles/Variables.css';
 import Header from './Header';
 import Main from './Main'
 

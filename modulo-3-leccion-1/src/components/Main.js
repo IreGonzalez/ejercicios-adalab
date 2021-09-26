@@ -1,4 +1,7 @@
 
+import '../styles/Main.css';
+
+
 const Main = () => {
     return (
         <main className="main">
