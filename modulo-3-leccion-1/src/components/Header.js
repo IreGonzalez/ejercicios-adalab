@@ -4,6 +4,7 @@ import Link from './Link';
 import '../styles/Header.css'
 
 const Header = () => {
+
     return (
         <header className="header">
             <a href="https://adalab.es/" title="Adalab" target="-blank">
@@ -13,9 +14,9 @@ const Header = () => {
                 <ul className="navigation">
                     <Link text="Contacto" href="https://adalab.es/"
                         title="Contacto"
-                        target="-blank"
+                        target="openInNewTab"
                         title="Contacto" />
-                    <Link text="Blog" href="https://adalab.es/" title="Blog" target="-blank" />
+                    <Link text="Blog" href="https://adalab.es/" title="Blog" target="pepino" />
                 </ul>
             </nav>
         </header>
