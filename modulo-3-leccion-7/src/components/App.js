@@ -12,12 +12,12 @@ const App = () => {
   const [legalTerms, setLegalTerms] = useState(false);
 
   // Eventos
-  const handleName = ev => {
-    setName(ev.target.value);
+  const handleName = (value) => {
+    setName(value);
   };
 
-  const handleEmail = ev => {
-    setEmail(ev.target.value);
+  const handleEmail = (value) => {
+    setEmail(value);
   };
 
   const handleRegion = ev => {
@@ -59,6 +59,7 @@ const App = () => {
     }
   };
 
+
   return (
     <div>
       <form className="form" onSubmit={handleForm}>
@@ -66,10 +67,10 @@ const App = () => {
         <div className="form">
 
           {/* name */}
-          <InputGroupText labelText="Escribe un nombre:" inputName="name" inputId="name" inputPlaceholder="María García" inputValue={name} onChange={handleName} />
+          <InputGroupText labelText="Escribe un nombre:" inputName="name" inputId="name" inputPlaceholder="María García" inputValue={name} handleChange={handleName} />
 
           {/* email */}
-          <InputGroupText labelText="Escribe un email:" inputName="email" inputId="email" inputPlaceholder="mariagarcia@gmail.com" inputValue={email} onChange={handleEmail} />
+          <InputGroupText labelText="Escribe un email:" inputName="email" inputId="email" inputPlaceholder="mariagarcia@gmail.com" inputValue={email} handleChange={handleEmail} />
 
 
           {/* region */}
@@ -156,7 +157,7 @@ const App = () => {
           </div>
         </div>
 
-        <Preview name={name} email={email} region={region} legalTerms={legalTerms === true ? 'Sí' : 'No'} />
+        <Preview name={name} email={email} region={region} paymentType={paymentType} legalTerms={legalTerms === true ? 'Sí' : 'No'} />
 
         {/* reset */}
         {/* Este botón debe estar inhabilitado mientras el formulario no sea válido */}

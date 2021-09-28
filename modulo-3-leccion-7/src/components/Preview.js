@@ -19,7 +19,7 @@ const Preview = (props) => {
                 <li>Nombre: {props.name}</li>
                 <li>Email: {props.email}</li>
                 <li>Región: {props.region}</li>
-                <li>Método de pago: {renderPaymentTypeText()}</li>
+                <li>Método de pago: {props.paymentType}</li>
                 <li>Has aceptado nuestros términos legales: {props.legalTerms}</li>
             </ul>
         </div>
