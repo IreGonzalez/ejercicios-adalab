@@ -3,7 +3,8 @@
 const InputGroupText = (props) => {
     const handleEvent = (ev) => {
         props.handleChange(ev.target.value)
-    }
+    };
+
     return (
         <div className="input-group-text">
             <label className="label-text" htmlFor="name">
