@@ -1,7 +1,7 @@
 
 import '../styles/App.css';
 
-//EJERCICIO 1 3.3.1**********************************************************
+// // EJERCICIO 1 3.3.1 Y 3.3.2**************************************
 
 // import { useState } from 'react';
 
@@ -12,7 +12,7 @@ import '../styles/App.css';
 //   const [patatas, setPatatas] = useState();
 //   const [huevos, setHuevos] = useState();
 //   const [cebolla, setCebolla] = useState();
-//   const [cerveza, setCerveza] = useState();
+//   const [cerveza, setCerveza] = useState()
 //   //función manejadora del evento con un if ev.target es estrictamente igual que el id lo mete en el set de esos
 
 //   const handleIngredient = (ev) => {
@@ -34,7 +34,7 @@ import '../styles/App.css';
 //     else if (ev.target.id === 'cerveza') {
 //       setCerveza(ev.target.checked);
 //     }
-//   }
+//   };
 
 //   //arrow que renderiza el mensaje 
 //   const renderMsgIng = () => {
@@ -43,13 +43,34 @@ import '../styles/App.css';
 //     }
 //     else {
 //       return 'Eres un robot sin paladar'
-//     }
-//   }
+//     };
+//   };
 
 
 //   const handleSubmit = (ev) => {
 //     ev.preventDefault();
-//   }
+//   };
+
+//   //Funciones de los Botones
+//   const handleSelectAll = () => {
+//     handleSubmit();
+//     setCerveza(true);
+//     setHuevos(true);
+//     setNueces(true);
+//     setPatatas(true);
+//     setCebolla(true);
+//     setMacarrones(true);
+//   };
+
+//   const handleReset = () => {
+//     handleSubmit();
+//     setCerveza(false);
+//     setHuevos(false);
+//     setNueces(false);
+//     setPatatas(false);
+//     setCebolla(false);
+//     setMacarrones(false);
+//   };
 
 //   return (
 //     <div className="App">
@@ -78,12 +99,14 @@ import '../styles/App.css';
 //             <input type="checkbox" name="cerveza" id="cerveza" value="Cerveza" onChange={handleIngredient} />
 //           </label>
 //           <input type="submit" value="Validar" />
+//           <button onclick={handleSelectAll}>Marcar todos</button>
+//           <button onClick={handleReset}>Desmarcar todos</button>
 //         </form>
 //         <p>{renderMsgIng()}</p>
 //       </main>
 //     </div>
 //   );
-// }
+// };
 
 //EJERCICIO 2 3.3.1**********************************************************
 
@@ -102,17 +125,77 @@ import '../styles/App.css';
 //   );
 // }
 
-//EJERCICIO 1 3.3.2**********************************************************
+//EJERCICIO 2 3.3.2**********************************************************
 
 import { useState } from 'react';
 
-function App() {
-  const [text, setText] = useState();
+const App = () => {
+  const [numberA, setNumberA] = useState(0);
+  const [numberB, setNumberB] = useState(0);
+  const [operation, setOperation] = useState("");
+
+  const handleNumberA = ev => {
+    setNumberA(ev.target.value);
+  };
+
+  const handleNumberB = ev => {
+    setNumberB(ev.target.value);
+  };
+
+  const operacion = "";
+  const total = "";
+
+  const totalOperated = () => {
+    if (operacion === "suma") {
+      total = parseInt(numberA) + parseInt(numberB)
+    }
+    else if (operacion === "resta") {
+      total = parseInt(numberA) - parseInt(numberB)
+    }
+    else if (operacion === "multiplicar") {
+      total = parseInt(numberA) * parseInt(numberB)
+    }
+    else if (operacion === "dividir") {
+      total = parseInt(numberA) / parseInt(numberB)
+    }
+  }
+
+  const handleSelect = (ev) => {
+    setOperation(ev.target.value);
+    console.log(ev.target.value);
+    const operacion = ev.target.value;
+    console.log(operacion);
+    totalOperated()
+  }
+
+
+
 
   return (
-    <div className="App">
+    <div>
+      <h1>La calculadora:</h1>
+      <form>
+        <select name="operations" id="operations" onChange={handleSelect}>
+          <option value="suma">Suma</option>
+          <option value="resta">Resta</option>
+          <option value="multiplicar">Multiplicar</option>
+          <option value="dividir">Dividir</option>
+        </select>
+        <label>
+          Escribe un número:
+          <input type="number" name="numberA" onChange={handleNumberA} />
+        </label>
+        <label>
+          Escribe otro número:
+          <input type="number" name="numberB" onChange={handleNumberB} />
+        </label>
+      </form>
+      <p>
+        La suma de <strong>{numberA}</strong> y <strong>{numberB}</strong> es
+        <strong> {total}</strong>.
+      </p>
     </div>
   );
-}
+};
 
 export default App;
