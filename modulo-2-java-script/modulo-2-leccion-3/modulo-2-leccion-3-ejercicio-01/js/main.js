@@ -1,9 +1,11 @@
 'use strict';
+const img = document.querySelector('.js-img');
 
 // avatar por defecto
 const DEFAULT_AVATAR = 'http://placehold.it/300x300';
 // avatar que eligió el usuario al registrarse
-let userAvatar = 'http://www.fillmurray.com/300/300';
+const userAvatar = '';
 
-userAvatar = '';
+//const userAvatar ='http://www.fillmurray.com/300/300';
 
+img.src = userAvatar || DEFAULT_AVATAR;
